@@ -1,0 +1,21 @@
+# battery power/weight
+# needed total power ~1550hp
+B_e_dens=250 #Wh/kg
+B_e_dens_J= B_e_dens*3600 #J/kg
+fuel_weight=1490 #lb
+lb_to_kg= 0.453592
+fuel_weight_lb= fuel_weight*lb_to_kg #kg
+fuel_e_dens= 46.36e6  #J/kg
+watt_req=1550*745.7 #W
+
+#if 100% electric
+#idea: back track from max MTOW to find out available weight that batteries + motor can take 
+#MTOW_VTOL=5897 #kg
+#MTOW_VTOL_lb=MTOW_VTOL/lb_to_kg
+#payload= 1600
+#EW=9076
+#avail_weight_lb=MTOW_VTOL_lb-EW-payload
+#print(avail_weight_lb)
+
+#####
+

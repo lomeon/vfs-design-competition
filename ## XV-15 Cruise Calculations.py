@@ -32,5 +32,6 @@ def P_cruise(q,S,CD_0, K, CL, V_cruise):
     P=q*S*(CD_0 + K*(CL**2))*V_cruise
     print(P/550) #hp
 
-P_cruise(224.8,32.17,0.012909,0.00897766,0.3427,506) #ideal HP
+P_cruise(q,S,CD_0,K,CL,V_cruise) #ideal HP for cruise
 
+#1550 hp total
