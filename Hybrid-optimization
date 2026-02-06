@@ -1,3 +1,7 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
 # battery power/weight
 # needed total power ~1550hp
 B_e_dens=250 #Wh/kg
@@ -18,4 +22,11 @@ watt_req=1550*745.7 #W
 #print(avail_weight_lb)
 
 #####
+
+#required power for each stage of mission
+hover_1= 2425 #MJ
+climb=1516 #MJ
+cruise=33496 # MJ
+decent= 24475 # MJ
+hover_2=927 # MJ
 
