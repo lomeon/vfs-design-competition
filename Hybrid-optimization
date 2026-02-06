@@ -22,11 +22,31 @@ watt_req=1550*745.7 #W
 #print(avail_weight_lb)
 
 #####
-
-#required power for each stage of mission
+climb_h=10000 #ft
+#required energy for each stage of mission
 hover_1= 2425 #MJ
 climb=1516 #MJ
 cruise=33496 # MJ
 decent= 24475 # MJ
 hover_2=927 # MJ
 
+
+# fuel
+usable_fuel=()
+reserve=0.1*usable_fuel
+total_fuel=usable_fuel+reserve
+
+# need the rate of climb to find out how long it takes to get to altitude
+G=()
+
+# time frames per stage
+t_hover1=5*60 # sec
+t_hover2=5*60 # sec
+t_climb=climb_h/G # where G is rate of climb
+stages= ["Hover 1",'Climb','Cruise','Decent','Hover 2']
+values= [hover_1,climb,cruise,decent,hover_2]
+
+## Plots
+plt.bar(stages,values)
+plt.ylabel('Energy Required [MJ]')
+plt.show()
